@@ -6,7 +6,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
-
+<p> 
 Laravel version 8.
 
 <b>Used packages </b>
@@ -26,3 +26,5 @@ Laravel version 8.
 
 Email: admin@gmail.com
 Password: 123456
+
+</p>
