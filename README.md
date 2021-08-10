@@ -17,12 +17,12 @@ Laravel version 8.
 2. npm run dev
 
 <b>Run command</b>
-1. php artisan db:seed --class=PermissionTableSeeder
-2. php artisan db:seed --class=CreateAdminUserSeeder
+1. php artisan migrate
+2. php artisan db:seed --class=PermissionTableSeeder
+3. php artisan db:seed --class=CreateAdminUserSeeder
 
 
 <b>Default Admin Credentials</b>
 
 Email: admin@gmail.com
-
 Password: 123456
