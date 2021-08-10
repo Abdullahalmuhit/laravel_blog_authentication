@@ -27,5 +27,16 @@
                 {{ $post->description }}
             </div>
         </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+        <strong>Image:</strong>
+            <div class="form-group">
+               
+                @if($post->file)
+                   <img src="{{ asset('storage/images/'.$post->file) }}" alt="image"
+                    class="image image-responsive float-left" style="max-height: 250px; width: 150px;">
+		        @endif
+            </div>
+        </div>
+        
     </div>
 @endsection

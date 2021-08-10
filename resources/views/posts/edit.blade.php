@@ -26,7 +26,7 @@
     @endif
 
 
-    <form action="{{ route('posts.update',$post->id) }}" method="POST">
+    <form action="{{ route('posts.update',$post->id) }}" method="POST" enctype="multipart/form-data">
     	@csrf
         @method('PUT')
 
@@ -41,7 +41,13 @@
 		    <div class="col-xs-12 col-sm-12 col-md-12">
 		        <div class="form-group">
 		            <strong>Description:</strong>
-		            <textarea class="form-control" style="height:150px" name="description" placeholder="Description">{{ $post->details }}</textarea>
+		            <textarea class="form-control" style="height:150px" name="description" placeholder="Description">{{ $post->description }}</textarea>
+		        </div>
+		    </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+		        <div class="form-group">
+		            <strong>Image:</strong>
+		            <input type="file" name="file" class="form-control" placeholder="image">
 		        </div>
 		    </div>
 		    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
